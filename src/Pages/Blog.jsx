@@ -1,6 +1,6 @@
 function Blog() {
     return (
-        <h1>Siia tuleb blogileht</h1>
+        <h3>Siia tuleb blogileht</h3>
     )
 }
 
