@@ -2,7 +2,7 @@ import { Outlet, NavLink } from "react-router-dom"
 
 function Layout() {
     return (
-        <div className="container">
+        <div className="container main">
             <header>
                 <nav className="navbar navbar-default">
                     <div className="container-fluid">
