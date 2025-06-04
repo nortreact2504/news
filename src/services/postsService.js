@@ -1,7 +1,6 @@
 const URL = `https://graphql.contentful.com/content/v1/spaces/${import.meta.env.VITE_SPACE}/environments/master`
 
 async function _fetch(request, retries = 0) {
-    console.log(import.meta.env)
     const result = await fetch(
         URL,
         {
@@ -62,8 +61,8 @@ query {
     picture {url}
     content {json}
   }
-}   
-    `
+}
+`
 }
 
 async function fetchBlogPostsList() {
@@ -98,5 +97,6 @@ async function fetchBlogPostDetails(postId) {
 
 export {
     fetchBlogPostsList,
-    fetchBlogPostDetails
+    fetchBlogPostDetails,
+    _makePostDetailsRequest
 }
